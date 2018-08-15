@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 1172153801}
   - component: {fileID: 1172153800}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,10 +620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa46a32893363a9418939eba7f3fd0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Power: {fileID: 1682013286}
-  Ht:
-    name: 
-    value: 0
+  Power0: {fileID: 0}
+  Boot: []
 --- !u!1 &1415407157
 GameObject:
   m_ObjectHideFlags: 0

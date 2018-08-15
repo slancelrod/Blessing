@@ -4,24 +4,26 @@ using System.Linq;
 
 using JetBrains.Annotations;
 
+using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Gg : MonoBehaviour {
 
-	public Text Power; 
-	public PersonVariable Hts;
-	List<PersonVariable> lizt = new List<PersonVariable>();
+	public Text Power0; 
+	
+	public List<PersonVariable> Boot = new List<PersonVariable>();
+	
 	void Start () {
 		Debug.Log("start");
-		Hts = new PersonVariable();
-		Hts.name = "Power";
-		Power.text = Hts.name;
+		Boot.Add(new PersonVariable("Power",0));
+		Power0.text = Boot[0].name;
 	}
 	
 	public void Button_Onclick () {
 		Debug.Log("Button Clicked");
-		Hts.value++;
-		Power.text = Hts.name + " " + Hts.value;
+		Boot[0].value++;
+		Power0.text = Boot[0].name + " " + Boot[0].value;
 	}
 }
