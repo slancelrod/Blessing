@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 
 using JetBrains.Annotations;
 
@@ -11,19 +12,25 @@ using UnityEngine.UI;
 
 public class Gg : MonoBehaviour {
 
-	public Text Power0; 
+	public List<Text> TextButtons = new List<Text>(2);
+
+	private List<PersonVariable> But = new List<PersonVariable>();
 	
-	public List<PersonVariable> Boot = new List<PersonVariable>();
-	
-	void Start () {
+	void Start () 
+	{
 		Debug.Log("start");
-		Boot.Add(new PersonVariable("Power",0));
-		Power0.text = Boot[0].name;
+		
+		But.Add(new PersonVariable("Power",0));
+		But.Add(new PersonVariable("Intellect",0));
+		
 	}
-	
-	public void Button_Onclick () {
-		Debug.Log("Button Clicked");
-		Boot[0].value++;
-		Power0.text = Boot[0].name + " " + Boot[0].value;
+
+	public void OnClick(string name) {
+		for (int i = 0; i < But.Count; i++) {
+			if (But[i].name == name) {
+				But[i].value++;
+				TextButtons[i].text = But[i].name + " " + But[i].value;
+			}
+		}
 	}
 }

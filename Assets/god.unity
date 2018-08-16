@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 577161091}
   - component: {fileID: 577161090}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonIntellect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,14 +191,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1360925040}
-        m_MethodName: Button_Onclick
-        m_Mode: 1
+        m_MethodName: OnClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Intellect
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 1019038863}
   - component: {fileID: 1019038862}
   m_Layer: 5
-  m_Name: PowerPoints
+  m_Name: Intellect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Intellect
 --- !u!222 &1019038863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -467,14 +467,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1360925040}
-        m_MethodName: Button_Onclick
-        m_Mode: 1
+        m_MethodName: OnClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Power
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -620,8 +620,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa46a32893363a9418939eba7f3fd0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Power0: {fileID: 0}
-  Boot: []
+  TextButtons:
+  - {fileID: 1682013286}
+  - {fileID: 1019038862}
 --- !u!1 &1415407157
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +773,7 @@ GameObject:
   - component: {fileID: 1682013287}
   - component: {fileID: 1682013286}
   m_Layer: 5
-  m_Name: PowerPoints
+  m_Name: Power
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,7 +829,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Power
+
+'
 --- !u!222 &1682013287
 CanvasRenderer:
   m_ObjectHideFlags: 0
