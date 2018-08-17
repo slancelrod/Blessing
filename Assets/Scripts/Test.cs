@@ -10,11 +10,13 @@ public class PersonVariable
 	
 	public string name;
 	public int value ;
-
-	public PersonVariable(string newName, int newValue)
+	public Text txt;
+	
+	public PersonVariable(string newName, int newValue,Text newTxt)
 	{
 		name = newName;
 		value = newValue;
+		txt = newTxt;
 	}
 
 }
